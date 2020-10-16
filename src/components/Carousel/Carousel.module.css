@@ -9,6 +9,10 @@
     margin-right: 8vw;
     border-bottom: 1px solid rgb(224, 222, 223);
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 
 .PromotionContainer {
     text-decoration: none;
