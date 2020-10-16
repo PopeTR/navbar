@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.95;
+    color: black;
+    transition: height 0.3s ease;
+    z-index: 2;
+}
+
+.containerItem {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Varta', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
+    padding: 6vw 12vw;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0.15em;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+p {
+    margin: 0;
+}
+
+.menuList {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    opacity: 0.95;
+    color: #fafafa;
+    transition: height 0.3s ease;
+    z-index: 2;
+}
