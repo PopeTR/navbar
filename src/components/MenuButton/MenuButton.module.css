@@ -1,0 +1,46 @@
+.menuContainer {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.line {
+    height: 2px;
+    width: 20px;
+    background: black;
+    transition: all 0.2s ease;
+}
+
+.lineTop {
+    margin-bottom: 5px;
+}
+
+.lineTopOpen {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    margin-bottom: 5px;
+}
+
+.lineMiddle {
+    opacity: 1;
+}
+
+.lineMiddleOpen {
+    opacity: 0;
+    transform: translateX(-16px);
+}
+
+.lineBottom {
+    margin-top: 5px;
+}
+
+.lineBottomOpen {
+    transform: translateX(-1px) rotate(-45deg);
+    transform-origin: top left;
+    margin-top: 5px;
+}

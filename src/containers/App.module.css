@@ -1,0 +1,24 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0.9;
+  display:flex;
+  align-items:center;
+  background: white;
+  width: 100%;
+  color: black;
+} 
+
+.logo{
+  margin: 0 auto;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
