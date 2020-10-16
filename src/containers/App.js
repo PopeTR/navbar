@@ -4,6 +4,8 @@ import MenuItem from '../components/MenuItem/MenuItem';
 import Menu from '../components/Menu/Menu';
 import MenuButton from '../components/MenuButton/MenuButton';
 import styled from 'styled-components';
+import Carousel from '../components/Carousel/Carousel';
+import Footer from '../components/Footer/Footer';
 
 const StyledHeader = styled.div`
     display: flex;
@@ -50,8 +52,13 @@ class App extends Component {
             <Header/>
         </StyledHeader>
         { this.state.menuOpen ?
-          <Menu>{menuItems}</Menu> 
+          <Menu>
+            <Carousel/>
+            {menuItems}
+            <Footer/>
+            </Menu> 
           : null }
+          
       </div>
     );
     

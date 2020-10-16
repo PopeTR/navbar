@@ -21,7 +21,7 @@ const Cart = styled.svg`
 `
 const Text = styled.p`
     position: absolute;
-    top: -8%;
+    top: 31%;
     right: 61%;
     font-size: 2.66667vw;
 `

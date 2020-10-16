@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
+
+.CarouselContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 4vw;
+    margin-right: 8vw;
+    border-bottom: 1px solid rgb(224, 222, 223);
+}
+
+.PromotionContainer {
+    text-decoration: none;
+    display: block;
+    width: 38.333vw;
+    height: 53.333vw;
+    object-fit: cover;
+    margin-right: 4vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    position: relative;
+}
+
+.PromotionCard {
+    text-decoration: none;
+    display: block;
+    width: 38.333vw;
+    height: 53.333vw;
+    object-fit: cover;
+    margin-right: 4vw;
+    margin-bottom: 4vw;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.PromotionWrapper {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.4));
+}
+
+.PromotionImage {
+    height: 100%;
+    background-position: left;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.4));
+    z-index: -1;
+}
+
+.PromotionImage:hover {
+    cursor: pointer;
+}
+
+.PromotionTitle {
+    position: absolute;
+    bottom: 4vw;
+    left: 4vw;
+    font-size: 4vw;
+    font-family: 'Varta', sans-serif;
+    letter-spacing: 0.025em;
+    color: white;
+    z-index: 10;
+}

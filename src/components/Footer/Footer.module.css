@@ -1,0 +1,27 @@
+.Navigation {
+    display: flex;
+    text-transform: uppercase;
+    padding-bottom: 6vw;
+    letter-spacing: 0.1em;
+}
+
+.FooterContainer {
+    padding: 12vw 12vw 48vw;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 3.06667vw;
+    line-height: 4.8vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-right: 2.66667vw;
+}
+
+.Info {
+    letter-spacing: 0.1em;
+    padding-bottom: 9vw;
+}
