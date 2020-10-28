@@ -13,7 +13,7 @@ class Promotion extends Component {
             <div className={styles.PromotionContainer}>
                 <div className={styles.PromotionCard}>
                     <div className={styles.PromotionWrapper}>
-                        <img className={styles.PromotionImage} src={this.props.image} href="www.stoxenergy.com"></img>
+                        <img className={styles.PromotionImage} src={this.props.image} alt="promo" href="www.stoxenergy.com"></img>
                         <div className={styles.PromotionTitle}>
                             {this.props.name}
                         </div>

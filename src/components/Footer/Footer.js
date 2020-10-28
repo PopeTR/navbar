@@ -1,23 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css'
 
-const contactInfo = [
-    {
-        info: "phone",
-        title: "Call",
-        address: "+31 (0)20 260 0129",
-    },
-    {
-        info: "address",
-        title: "Address",
-        address: "Singel 436, Amsterdam, 1017 BR",
-    },
-    {
-        info: "email",
-        title: "mail",
-        address: "support@stoxenergy.com",
-    }
-]
 
 
 const Footer = () => {

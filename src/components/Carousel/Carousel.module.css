@@ -5,7 +5,6 @@
     flex-direction: row;
     width: 100%;
     overflow-x: auto;
-    padding-left: 4vw;
     margin-right: 8vw;
     border-bottom: 1px solid rgb(224, 222, 223);
 }
@@ -26,6 +25,9 @@
     position: relative;
 }
 
+.MainContainer {
+}
+
 .PromotionCard {
     text-decoration: none;
     display: block;
@@ -33,6 +35,7 @@
     height: 53.333vw;
     object-fit: cover;
     margin-right: 4vw;
+    margin-left: 4vw;
     margin-bottom: 4vw;
     position: relative;
     overflow: hidden;
@@ -49,8 +52,9 @@
     height: 100%;
     background-position: left;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     right: 0px;
     bottom: 0px;
     background-image: linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.4));

@@ -8,12 +8,16 @@ class MenuButton extends Component {
           open: this.props.open? this.props.open:false,
         }
     }  
-
-    UNSAFE_componentWillReceiveProps(nextProps){
-        if(nextProps.open !== this.state.open){
-          this.setState({open:nextProps.open});
+    
+    static getDerivedStateFromProps(nextProps, prevState){
+        if(nextProps.open !== prevState.open){
+          return ({open: nextProps.open});
+          
         }
+        return null;
     }
+
+
     
     handleClick(){
         this.setState({open:!this.state.open});
