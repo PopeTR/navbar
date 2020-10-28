@@ -3,22 +3,11 @@ import Header from '../components/Header/Header';
 import axios from 'axios';
 import Menu from '../components/Menu/Menu';
 import MenuButton from '../components/MenuButton/MenuButton';
-import styled from 'styled-components';
+import styles from './App.module.css';
 import Carousel from '../components/Carousel/Carousel';
 import Footer from '../components/Footer/Footer';
 import Accordion from '../components/Accordion/Accordion';
 import AccordionItem from '../components/Accordion/AccordionItem';
-
-const StyledHeader = styled.div`
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 13.0667vw;
-    border-bottom: 1px solid rgb(229, 229, 229);
-    position: relative;
-    top: 0;
-    background: white;
-`
 
 class App extends Component {
   constructor(props) {
@@ -57,11 +46,13 @@ class App extends Component {
     
     return (
       <div>
-        <StyledHeader>
+        <div className={styles.styledheader}>
             <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()}/>
             <Header/>
-        </StyledHeader>
+        </div>
+
         { this.state.menuOpen ?
+          
           <Menu>
             <Carousel/>
             <Accordion>
@@ -122,11 +113,9 @@ class App extends Component {
             </Accordion>
             <Footer/>
           </Menu> 
-          : null }
-          
+        : null }  
       </div>
-    );
-    
+    );   
   }
 }
 

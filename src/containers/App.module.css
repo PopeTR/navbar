@@ -15,6 +15,17 @@
   margin: 0 auto;
 }
 
+.styledheader{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 13.0667vw;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    position: relative;
+    top: 0;
+    background: white;
+}
+
 .body{
   display: flex;
   flex-direction: column;

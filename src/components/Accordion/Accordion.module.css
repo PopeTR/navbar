@@ -1,7 +1,3 @@
-.accordionSection {
-
-}
-
 .accordionContainer {
     display: block;
     text-transform: uppercase;
@@ -56,9 +52,6 @@
     padding-top: 6vw;
 }
 
-.listContainer {
-}
-
 .accordionItem {
     display: flex;
     justify-content: space-between;
@@ -68,21 +61,5 @@
     padding-top: 2vw;
     padding-right: 0 !important;
     animation: growDown 300ms ease-in-out forwards;
-}
-
-.accordion {
-
-}
-
-.accordionTitle {
-
-}
-
-.accordionContent {
-    
-}
-
-.accordionText {
-
 }
 
