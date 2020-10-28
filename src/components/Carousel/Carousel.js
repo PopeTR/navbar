@@ -9,8 +9,8 @@ class Carousel extends Component {
         this.state= {
           promotions: []
         }
-      } 
-
+    } 
+// data hosted in firebase cloud as realtime database
     componentDidMount(){
         axios
         .get('https://carousel-askphill.firebaseio.com/.json')
@@ -18,22 +18,25 @@ class Carousel extends Component {
             this.setState({promotions: response.data})
         })
         .catch(error => console.log(error))
-      }
+    }
         
     render() {
         const{promotions} = this.state
         const target = React.createRef();
+        // Mapping promotion items from the database and structured in promotion.js
         const promotionItems = promotions.map((val)=>{
             return (
-              <Promotion
-                key={val.id}
-                name={val.name} 
-                image={val.image}
-                onClick={()=>{this.handleLinkClick();}}></Promotion>
+                <Promotion
+                    key={val.id}
+                    name={val.name} 
+                    image={val.image}
+                    link={val.link}>
+                </Promotion>
             )   
         });
 
         return (
+            // Carousel layout with promotionItems array 
             <div className={styles.MainContainer}>
                 <div className={styles.CarouselContainer} ref={target}>
                     {promotionItems}

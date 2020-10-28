@@ -20,7 +20,12 @@
     align-items: center;
 }
 
-.fa-search {
+.iconlink {
+    padding: 0;
+    display: flex;
+}
+
+.search {
     margin-right: 3.6vw;
     width: 5.0vw !important;
     height: 5.0vw;
@@ -34,12 +39,12 @@
 .cart {
     fill: black;
     margin-right: 4vw;
-    height: 6.0vw;
+    height: 5.5vw;
 }
 
 .text {
     position: absolute;
-    top: 31%;
+    top: 30%;
     right: 61%;
     font-size: 2.66667vw;
 }

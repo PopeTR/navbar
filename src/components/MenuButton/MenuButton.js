@@ -16,13 +16,13 @@ class MenuButton extends Component {
         }
         return null;
     }
-
-
-    
+// Changing state between open and not open
     handleClick(){
-        this.setState({open:!this.state.open});
+      const {open} = this.state
+      this.setState({open:!open});
     }
 
+// Inline styles used for access of state and dynamic styling based on whether the menu is open or not. 
     render(){
         const styles = {
             container: {
@@ -62,12 +62,12 @@ class MenuButton extends Component {
             },  
 
           }
-
+          const {onClick} = this.props
         return(
             
             <div style={styles.container} 
-                onClick={this.props.onClick ? this.props.onClick: 
-                ()=> {this.handleClick();}}>
+            // Has the button been clicked? if it has run onClick otherwise run handleClick. 
+                onClick={onClick ? onClick : () => {this.handleClick();}}>
                 <div style={{...styles.line,...styles.lineTop}}/>
                 <div style={{...styles.line,...styles.lineMiddle}}/>
                 <div style={{...styles.line,...styles.lineBottom}}/>

@@ -32,6 +32,7 @@ class Accordion extends Component {
     } = this;
     
     return (
+      // Mapping out each child of children in an AccordionSection each. Props being passed are label, click, isOpen and key
       <div className={styles.listContainer}>
         {children.map((child, index) => ( 
           <AccordionSection
@@ -43,7 +44,6 @@ class Accordion extends Component {
             {child.props.children}
           </AccordionSection>
         ))}
-
       </div>
     );
   }

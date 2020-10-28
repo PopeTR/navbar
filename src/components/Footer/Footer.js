@@ -12,6 +12,7 @@ const Footer = () => {
             </div>
             <div className={styles.Info}>
                 <p><strong>Call</strong> +31 (0)20 260 0129</p>
+                {/* Placeholders for contact information */}
                 <br></br>
                 <br></br>
                 <br></br>

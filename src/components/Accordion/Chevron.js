@@ -3,7 +3,7 @@ import styles from './Accordion.module.css';
 
 
 const Chevron = ({dropdown}) => {
-
+// dropdown is a prop passed from Accordion section. if dropdown is true then return svg including animation class. Otherwise just use standard class. 
     if (dropdown) {
         return (
             <svg

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
-
+/* Varta is a similar font to the one used by STOX */
 .CarouselContainer {
     display: flex;
     flex-direction: row;
@@ -11,6 +11,10 @@
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
+}
+
+.link {
+    padding-right: 0 !important;
 }
 
 .PromotionContainer {

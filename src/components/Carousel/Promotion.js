@@ -7,19 +7,22 @@ class Promotion extends Component {
         this.state = {
         }
     }
-
+// props passed from carousel to display each individual promotion as a link
     render() {
+        const {image, link, name} = this.props
         return(
-            <div className={styles.PromotionContainer}>
-                <div className={styles.PromotionCard}>
-                    <div className={styles.PromotionWrapper}>
-                        <img className={styles.PromotionImage} src={this.props.image} alt="promo" href="www.stoxenergy.com"></img>
-                        <div className={styles.PromotionTitle}>
-                            {this.props.name}
+            <a className={styles.link} href={link}>
+                <div className={styles.PromotionContainer} >
+                    <div className={styles.PromotionCard}>
+                        <div className={styles.PromotionWrapper}>
+                            <img className={styles.PromotionImage} src={image} alt="promo"></img>
+                            <div className={styles.PromotionTitle}>
+                                {name}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         )
     }
 }

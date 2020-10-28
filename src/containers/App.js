@@ -18,6 +18,7 @@ class App extends Component {
     }
   } 
 
+  // using firebase to host the data in json format that I can use for the list of socks
   componentDidMount(){
     axios
     .get('https://navbar-askphill.firebaseio.com/.json')
@@ -26,6 +27,7 @@ class App extends Component {
     }).catch(error => console.log(error))
   }
 
+  // Changes the state of menuOpen to whatever it is not
   handleMenuClick() {
     const doesShow = this.state.menuOpen;
     this.setState({menuOpen:!doesShow});
@@ -37,7 +39,8 @@ class App extends Component {
 
 
   render() {
-    const{socks}=this.state
+    // Filtering the socks array and saving each one to a variable to use as an accordion drop down. Data from database rather than hard coding. 
+    const{socks, menuOpen}=this.state
     const allSocks = socks.filter(sock => sock.menu === "All Socks")
     const dailySocks = socks.filter(sock => sock.menu === "Daily")
     const sportSocks = socks.filter(sock => sock.menu === "Sports")
@@ -45,16 +48,18 @@ class App extends Component {
     const medicalSocks = socks.filter(sock => sock.menu === "Medical")
     
     return (
+      // navbar and header
       <div>
         <div className={styles.styledheader}>
             <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()}/>
             <Header/>
         </div>
 
-        { this.state.menuOpen ?
-          
+        { menuOpen ?
+          // menu if menuOpen state is true
           <Menu>
             <Carousel/>
+            {/* Looping over the array of each Accordion section and displaying an accordion item passing key, name, products and link props to the AccordionItem  */}
             <Accordion>
               <div label='All Socks'>
                 { allSocks.map((sock) => 
